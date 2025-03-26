@@ -1,0 +1,47 @@
+body{
+    display: grid;
+    height: 97vh;
+    margin: 0;
+    padding: 54px;
+    background-color: #292929;
+    place-items: center;
+}
+.container{
+    position: relative;
+    width: 200px;
+    height: 350px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: animate 20s linear infinite;
+}
+div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    transition: 1s;
+}
+span{
+    width: 200px;
+    height: 350px;
+    display: grid;
+    place-items: center; 
+    border-radius: 24px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    overflow: hidden;
+    background-color: #fff;
+}
+@keyframes animate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+img{
+    border-radius: 24px;
+    width: 190px;
+    height: 340px;
+}
