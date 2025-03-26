@@ -13,10 +13,6 @@
 - HTML5
 - CSS3 (Transformaciones y Animaciones)
 
-## 🔍 Vista Previa
-
-Puedes ver el proyecto en vivo aquí: [Demo en Vivo](https://gianmattus-programmer.github.io/3D-card-rotation)
-
 ## 🎮 Cómo Usar
 
 1. Clona este repositorio:
